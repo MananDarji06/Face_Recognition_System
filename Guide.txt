@@ -1,0 +1,20 @@
+Face Recognition Starter (facenet-pytorch) - single-file demo
+Filename: face_recog_starter.py
+
+What this file provides:
+- Enrollment: select a folder of images per person, extract embeddings (facenet-pytorch MTCNN + InceptionResnetV1), and store into a local SQLite DB.
+- Recognition: select an image (or use webcam) -> detect faces, compute embeddings, match to enrolled people using cosine distance, display results in a Tkinter GUI with image preview and bounding boxes.
+- History: prediction records saved into SQLite and exportable to CSV.
+- Visualization: helper to plot genuine vs impostor distance histograms using Seaborn.
+
+Requirements (install):
+pip install facenet-pytorch torch torchvision pillow opencv-python numpy pandas seaborn matplotlib
+
+Notes:
+- facenet-pytorch will download pretrained weights the first time it runs (internet required initially).
+- This starter is designed for demo/uni use and not production. It stores embeddings as pickled blobs in SQLite.
+- Ensure you run this file from the project root where a "data/" directory can be created.
+
+Usage:
+1. python face_recog_starter.py
+2. Use the GUI buttons: Enroll Person, Predict Image, View History, Export History, Plot Distances.

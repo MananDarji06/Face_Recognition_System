@@ -1,0 +1,28 @@
+@'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+*.ipynb_checkpoints/
+
+# Virtual env & build
+venv/
+env/
+.venv/
+build/
+dist/
+
+# App data
+data/uploads/
+models/
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+'@ | Set-Content .gitignore
