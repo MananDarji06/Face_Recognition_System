@@ -10,3 +10,4 @@ seaborn
 matplotlib
 pyttsx3
 tqdm
+pymongo
