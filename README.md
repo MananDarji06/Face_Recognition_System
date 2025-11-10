@@ -1,7 +1,7 @@
-## Face Recognition System
+# Face Recognition System
 GUI and algos made in Python
 
-# Guide:
+## Guide:
 Face Recognition Starter (facenet-pytorch) - single-file demo
 Filename: face_recog_starter.py
 
@@ -20,7 +20,7 @@ Usage:
 1. python face_recog_starter.py
 2. Use the GUI buttons: Enroll Person, Predict Image, View History, Export History, Plot Distances.
 
-# Function Logic:
+## Function Logic:
 algorithms.py (minimal algorithms)
 
 Globals
@@ -171,7 +171,7 @@ main():
 Creates a MongoRepo instance, initializes FaceEngine, builds the Tkinter window,
 and starts the event loop. This is the entry point of the application.
 
-# How to use:
+## How to use:
 - Activate the virtual environment
 (Windows: venv\Scripts\activate, masOS/Linux:source venv/bin/activate)
 - Install required dependencies (Only needed the first time)
