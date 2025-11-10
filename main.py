@@ -44,7 +44,6 @@ class MongoRepo:
         })
 
     def fetch_all_embeddings(self):
-        """Return list of (name, embedding_np) for matching."""
         out = []
         pipeline = [
             {"$lookup": {"from": "people", "localField": "person_id", "foreignField": "_id", "as": "p"}},
