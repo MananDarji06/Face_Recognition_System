@@ -1,0 +1,12 @@
+facenet-pytorch
+torch
+torchvision
+numpy
+pillow
+opencv-python
+pymongo
+pandas
+seaborn
+matplotlib
+pyttsx3
+tqdm
